@@ -1,0 +1,286 @@
+/* Main classes */
+
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: black;
+}
+
+input {
+    margin-top: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+input:focus {
+    outline: none;
+}
+
+p {
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+button {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    color: white;
+    background-color: black;
+
+    width: 10vw;
+    height: 5vh;
+}
+
+button:hover {
+    background-color:peachpuff;
+}
+
+button:active {
+    background-color:khaki;
+}
+
+button:disabled {
+    background-color: darkgrey;
+}
+
+/* Header Classes */
+
+.header {
+    font-family: 'Roboto', 'Arial';
+
+    border-bottom: 1px solid black;
+
+    display: grid;
+    grid-template-columns: 10vw 60vw 15vw 15vw;
+    justify-items: start;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    background-color: white;
+}
+
+.icon {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+/*Hero block classes*/
+
+.hero {
+    width: 100%;
+    height: 130vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: 
+    "A B"
+    "C D"
+    "E D"
+    "E D";
+    grid-row-gap: 20px;
+
+    margin-top: 200px;
+}
+
+.bigtext {
+    display: flex;
+
+    font-size: 72px;
+    grid-area: A;
+}
+
+.linktext {
+    display: flex;
+    grid-area: B;
+
+    font-size: 18px;
+    justify-content: end;
+    align-items: end;
+}
+
+.smalltext {
+    display: flex;
+    max-width: 60%;
+    grid-area: C;
+
+    font-size: 20px;
+}
+
+.bigimg {
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    grid-area: D;
+}
+
+.smallimg {
+    width: 40%;
+    height: 100%;
+
+    justify-content: end;
+    align-items: end;
+    
+    grid-area: E;
+}
+
+/* About block classes */
+
+.about {
+    display: grid;
+
+    margin-top: 200px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.aboutbig {
+    max-width: 80%;
+    font-size: 48px;
+}
+
+.abouttext {
+    font-size: 16px;
+    max-width: 60%;
+}
+
+.aboutsubtext {
+    margin-top: 20px;
+}
+
+.aboutpoint {
+    line-height: 0,5em;
+    max-width: 30%;
+    margin-top: 40px;
+}
+
+/* Steps block classes */
+
+.steps {
+    display: grid;
+
+    margin-top: 200px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.stepslist {
+    width: 95%;
+}
+
+.stepstext {
+    margin-bottom: 60px;
+    width: 40%;
+}
+
+.stepspoint {
+    display: grid;
+
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.stepsheader {
+    font-size: 36px;
+    width: 80%;
+}
+
+/* Projects block classes */
+
+.projects {
+    width: 100%;
+    height: 200vh;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+
+    margin-bottom: 200px;
+}
+
+.projectimg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Testimonials block classes */
+
+.testimonials {
+    width: 100%;
+    height: 30vh;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.testimony {
+    border: 1px black solid;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr;
+
+    max-height: 40vh;
+
+    justify-items: center;
+}
+
+.testimonytext {
+    margin: 0;
+    align-content: center;
+    width: 80%;
+}
+
+/* Form classes */
+
+.endform {
+    margin-top: 200px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-height: 60vh;
+
+    margin-bottom: 200px;
+}
+
+.formimg {
+    width: 80%;
+    height: 80%;
+}
+
+.formdesc {
+    margin-bottom: 80px;
+}
+
+/* Footer classes */
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "A B C D";
+
+    align-items: end;
+    bottom: 0;
+    left: 0;
+
+    border-top: 1px black solid;
+}
+
+.footersign {
+    width: 50vw;
+}
